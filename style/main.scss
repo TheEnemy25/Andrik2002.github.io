@@ -1,0 +1,1470 @@
+@import "base/base";
+@import "base/variables";
+@import "base/fonts";
+@import "base/mixins";
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  @include option-nomain(1440px, 700px);
+  background-image: url("../image/Background.png");
+  padding: 40px 0 0 0;
+  margin: 0 auto;
+  background-position: center;
+  .log {
+    font-size: 14px;
+    line-height: 17px;
+    &-in {
+      font-family: $Montserrat-Regular;
+      color: $color-white;
+      text-decoration: none;
+    }
+    &-up {
+      @include option-nomain(90px, 36px);
+      color: $color-white;
+      border: 2px solid $color-white;
+      box-sizing: border-box;
+      border-radius: 40px;
+      cursor: pointer;
+      background-color: transparent;
+      font-family: $Montserrat-Regular;
+    }
+  }
+  .nav-up {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logo {
+    @include size-type($Montserrat-Bold, 20px, 24px, $color-white);
+    padding: 7px 0 0 0;
+  }
+
+  .holiday-dream {
+    @include size-type($Montserrat-Bold, 52px, 63px, $color-white);
+    width: 470px;
+    height: 126px;
+    margin: 150px auto 0;
+    display: flex;
+    text-align: center;
+    &-button {
+      @include option(225px, 40px, $color-red);
+      border: none;
+      color: $color-f7f3f2;
+      font-family: $Montserrat-Bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40px;
+      margin: 33px auto 0;
+      cursor: pointer;
+    }
+  }
+
+  .holiday-dream-lower {
+    @include size-type($Roboto-Light, 24px, 24px, $color-f7f3f2);
+    text-align: center;
+    margin-top: 28px;
+  }
+}
+
+.main-block-first {
+  @include option(940px, 468px, $color-white);
+  margin: 89px auto;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 66px 400px;
+  gap: 0 20px;
+  .paragraph {
+    @include size-type($Montserrat-Bold, 26px, 32px, $color-black);
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  &-img-left {
+    width: 300px;
+    height: 400px;
+    background-image: url("../image/Step 1 image.png");
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  &-img-center {
+    width: 300px;
+    height: 400px;
+    background-image: url("../image/Step 2 image.png");
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  &-img-right {
+    width: 300px;
+    height: 400px;
+    background-image: url("../image/Step 3 image.png");
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+.main-block-second {
+  @include option(941px, 367px, $color-white);
+  margin: 88px auto 0;
+  .paragraph {
+    @include size-type($Montserrat-Bold, 26px, 32px, $color-black);
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .meet-partner {
+    display: flex;
+    justify-content: space-between;
+    .meet-partner-bradley {
+      width: 221px;
+      height: 224px;
+      .partner-bradley {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        background-image: url("../image/Avatar.png");
+      }
+      .partner-bradley-bold-text {
+        @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+        text-align: center;
+        margin: 17px 0 28px 0;
+      }
+      .partner-bradley-simply-text {
+        @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+        text-align: center;
+      }
+    }
+    .meet-partner-marie {
+      width: 221px;
+      height: 224px;
+      .partner-marie {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        background-image: url("../image/Avatar2.png");
+      }
+      .partner-marie-bold-text {
+        @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+        text-align: center;
+        margin: 17px 0 28px 0;
+      }
+      .partner-marie-simply-text {
+        @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+        text-align: center;
+      }
+    }
+    .meet-partner-diana {
+      width: 221px;
+      height: 224px;
+      .partner-diana {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        background-image: url("../image/Avatar3.png");
+      }
+      .partner-diana-bold-text {
+        @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+        text-align: center;
+        margin: 17px 0 28px 0;
+      }
+      .partner-diana-simply-text {
+        @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+        text-align: center;
+      }
+    }
+    .meet-partner-christopher {
+      width: 221px;
+      height: 224px;
+      .partner-christopher {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        background-image: url("../image/Avatar4.png");
+      }
+      .partner-christopher-bold-text {
+        @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+        text-align: center;
+        margin: 17px 0 28px 0;
+      }
+      .partner-christopher-simply-text {
+        @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+        text-align: center;
+      }
+    }
+  }
+  .button-see-partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 36px auto 0;
+    .see-partners {
+      @include option(180px, 40px, $color-white);
+      border: 2px solid $color-red;
+      border-radius: 40px;
+      color: $color-red;
+      font-family: $Montserrat-Bold;
+    }
+  }
+}
+.main-block-third {
+  @include option(940px, 1035px, $color-white);
+  margin: 89px auto 0;
+  .paragraph {
+    @include size-type($Montserrat-Bold, 26px, 32px, $color-black);
+    text-align: center;
+  }
+  &-grid {
+    @include option-nomain(940px, 970px);
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    grid-template-rows: 310px 310px 310px;
+    margin: 34px 0 0 0;
+    gap: 20px 10px;
+    .grid-sport {
+      background-image: url("../image/Sport.png");
+      @include option-nomain(300px, 310px);
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      border-radius: 4px;
+    }
+    .grid-healath {
+      background-image: url("../image/Healath.png");
+      @include option-nomain(300px, 310px);
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      border-radius: 4px;
+    }
+    .grid-extreme {
+      background-image: url("../image/Extreme.png");
+      @include option-nomain(300px, 310px);
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      border-radius: 4px;
+    }
+    .grid-games {
+      background-image: url("../image/Games.png");
+      @include option-nomain(300px, 310px);
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      border-radius: 4px;
+    }
+    .grid-culture {
+      background-image: url("../image/Culture.png");
+      @include option-nomain(620px, 310px);
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      border-radius: 4px;
+    }
+    .grid-culturecopy {
+      background-image: url("../image/Culture Copy.png");
+      @include option-nomain(620px, 310px);
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      border-radius: 4px;
+    }
+    .grid-gamescopy {
+      background-image: url("../image/Games Copy.png");
+      @include option-nomain(300px, 310px);
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      border-radius: 4px;
+    }
+  }
+}
+.main-block-fourth {
+  @include option-nomain(482px, 165px);
+  margin: 90px auto 0;
+  .paragraph {
+    @include size-type($Montserrat-Bold, 26px, 32px, $color-black);
+    text-align: center;
+  }
+  .holiday-activity {
+    @include size-type($Roboto-Light, 18px, 14px, $color-grey);
+    margin: 55px 0 0 0;
+    text-align: center;
+  }
+  .holiday-activity-input {
+    display: flex;
+    justify-content: space-between;
+    margin: 23px 0 0 0;
+    .holiday-activity-button {
+      @include option(172.12px, 40px, $color-red);
+      border-radius: 40px;
+      border: none;
+      color: $color-white;
+      font-family: $Montserrat-Bold;
+    }
+    .holiday-activity-search {
+      @include option(299px, 40px, $color-white);
+      border: 1px solid #d4d4d4;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+      border-radius: 3px;
+      font-family: $Roboto-Light;
+      color: $color-lightgrey;
+      padding: 0 0 0 12px;
+    }
+  }
+}
+.footer {
+  @include option-nomain(100%, 260px);
+  margin: 100px auto 0;
+  hr {
+    @include option(1440px, 2px, $color-red);
+    border: none;
+  }
+  &-block {
+    @include option-nomain(944px, 186px);
+    margin: 38px auto 0;
+    display: grid;
+    grid-template-columns: 241px 239px 351px 113px;
+    grid-template-rows: 20px 26px 26px 26px 26px 26px 26px;
+    gap: 2px 0;
+    .dreamshare {
+      @include size-type($Montserrat-Regular, 16px, 20px, $color-red);
+    }
+    .company {
+      @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+    }
+    .partners {
+      @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+    }
+    .designed-by {
+      @include size-type($Montserrat-Bold, 10px, 12px, $color-cccccc);
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    .areto-development {
+      @include option-nomain(110px, 24px);
+      background-image: url("../image/Bitmap.png");
+      grid-column-start: 4;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
+    .about {
+      @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
+    .contact {
+      @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 3;
+    }
+    .press {
+      @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 4;
+    }
+    .blog {
+      @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 5;
+    }
+    .terms-and-privacy {
+      @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 6;
+      grid-row-end: 6;
+    }
+    .help {
+      @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 7;
+      grid-row-end: 7;
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .header {
+    @include option-nomain(100%, 700px);
+    background-position: center;
+    background-image: url("../image/Background.png");
+    padding: 40px 0 0 0;
+    margin: 0 auto;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 977px) {
+  .header {
+    @include option-nomain(100%, 700px);
+    background-position: center;
+    background-image: url("../image/Background.png");
+    padding: 40px 0 0 0;
+    margin: 0 auto;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .nav-up {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 -140px 0;
+  }
+  .main-block-first {
+    @include option(748px, 468px, $color-white);
+    margin: 89px auto 0;
+    display: grid;
+    grid-template-columns: 236px 236px 236px;
+    grid-template-rows: 66px 400px;
+    gap: 0 20px;
+    .paragraph {
+      @include size-type($Montserrat-Bold, 22px, 27px, $color-black);
+      text-align: center;
+      margin: 5px 0 0 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+    &-img-left {
+      @include option-nomain(236px, 400px);
+      background-image: url("../image/Step 1 image.png");
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    &-img-center {
+      @include option-nomain(236px, 400px);
+      background-image: url("../image/Step 2 image.png");
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    &-img-right {
+      @include option-nomain(236px, 400px);
+      background-image: url("../image/Step 3 image.png");
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  }
+  .main-block-second {
+    @include option(492px, 605px, $color-white);
+    margin: 91px auto 0;
+    .paragraph {
+      @include size-type($Montserrat-Bold, 22px, 27px, $color-black);
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .meet-partner {
+      @include option-nomain(492px, 469px);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 236px 236px;
+      grid-template-rows: 224px 205px;
+      gap: 37px 10px;
+      .meet-partner-bradley {
+        @include option-nomain(236px, 205px);
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        .partner-bradley {
+          @include option-nomain(120px, 120px);
+          margin: 0 auto;
+          background-image: url("../image/Avatar.png");
+        }
+        .partner-bradley-bold-text {
+          @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+          text-align: center;
+          margin: 21px 0 22px 0;
+        }
+        .partner-bradley-simply-text {
+          @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+          text-align: center;
+        }
+      }
+      .meet-partner-marie {
+        @include option-nomain(236px, 205px);
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        .partner-marie {
+          @include option-nomain(120px, 120px);
+          margin: 0 auto;
+          background-image: url("../image/Avatar2.png");
+        }
+        .partner-marie-bold-text {
+          @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+          text-align: center;
+          margin: 18px 0 22px 0;
+        }
+        .partner-marie-simply-text {
+          @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+          text-align: center;
+        }
+      }
+      .meet-partner-diana {
+        @include option-nomain(236px, 224px);
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        .partner-diana {
+          @include option-nomain(120px, 120px);
+          margin: 0 auto;
+          background-image: url("../image/Avatar3.png");
+        }
+        .partner-diana-bold-text {
+          @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+          text-align: center;
+          margin: 21px 0 28px 0;
+        }
+        .partner-diana-simply-text {
+          @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+          text-align: center;
+        }
+      }
+      .meet-partner-christopher {
+        @include option-nomain(236px, 205px);
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        .partner-christopher {
+          @include option-nomain(120px, 120px);
+          margin: 0 auto;
+          background-image: url("../image/Avatar4.png");
+        }
+        .partner-christopher-bold-text {
+          @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+          text-align: center;
+          margin: 18px 0 22px 0;
+        }
+        .partner-christopher-simply-text {
+          @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+          text-align: center;
+        }
+      }
+    }
+    .button-see-partners {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 36px auto 0;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 4;
+      .see-partners {
+        @include option(180px, 40px, $color-white);
+        border: 2px solid $color-red;
+        border-radius: 40px;
+        color: $color-red;
+        font-family: $Montserrat-Bold;
+      }
+    }
+  }
+  .main-block-third {
+    @include option-nomain(748px, 1031px);
+    margin: 98px auto 0;
+    .paragraph {
+      @include size-type($Montserrat-Bold, 22px, 27px, $color-black);
+      text-align: center;
+    }
+    &-grid {
+      @include option-nomain(748px, 970px);
+      display: grid;
+      grid-template-columns: 236px 236px 236px;
+      grid-template-rows: 310px 310px 310px;
+      margin: 34px auto 0;
+      gap: 20px;
+      .grid-sport {
+        @include option-nomain(236px, 310px);
+        background-position: center;
+        background-image: url("../image/Sport.png");
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        border-radius: 4px;
+      }
+      .grid-healath {
+        @include option-nomain(236px, 310px);
+        background-position: center;
+        background-image: url("../image/Healath.png");
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        border-radius: 4px;
+      }
+      .grid-extreme {
+        @include option-nomain(236px, 310px);
+        background-position: center;
+        background-image: url("../image/Extreme.png");
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        border-radius: 4px;
+      }
+      .grid-games {
+        @include option-nomain(236px, 310px);
+        background-position: center;
+        background-image: url("../image/Games.png");
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        border-radius: 4px;
+      }
+      .grid-culture {
+        @include option-nomain(492px, 310px);
+        background-position: center;
+        background-image: url("../image/Culture.png");
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-radius: 4px;
+      }
+      .grid-culturecopy {
+        @include option-nomain(492px, 310px);
+        background-position: center;
+        background-image: url("../image/Culture Copy.png");
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        border-radius: 4px;
+      }
+      .grid-gamescopy {
+        @include option-nomain(236px, 310px);
+        background-image: url("../image/Games Copy.png");
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        border-radius: 4px;
+      }
+    }
+  }
+  .main-block-fourth {
+    @include option-nomain(482px, 159px);
+    margin: 93px auto 0;
+    .paragraph {
+      color: $color-black;
+      font-family: $Montserrat-Bold;
+      text-align: center;
+      font-size: 22px;
+      line-height: 27px;
+    }
+    .holiday-activity {
+      @include size-type($Roboto-Light, 18px, 14px, $color-grey);
+      margin: 55px 0 0 0;
+      text-align: center;
+    }
+    .holiday-activity-input {
+      display: flex;
+      justify-content: space-between;
+      margin: 23px 0 0 0;
+      .holiday-activity-button {
+        @include option(172.12px, 40px, $color-red);
+        border-radius: 40px;
+        border: none;
+        color: $color-white;
+        font-family: $Montserrat-Bold;
+      }
+      .holiday-activity-search {
+        @include option(299px, 40px, $color-white);
+        border: 1px solid #d4d4d4;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+        border-radius: 3px;
+        font-family: $Roboto-Light;
+        color: $color-lightgrey;
+        padding: 0 0 0 12px;
+      }
+    }
+  }
+  .footer {
+    @include option-nomain(100%, 260px);
+    margin: 100px auto 0;
+    hr {
+      @include option(1440px, 2px, $color-red);
+      border: none;
+    }
+    &-block {
+      @include option-nomain(692px, 186px);
+      margin: 38px auto;
+      display: grid;
+      grid-template-columns: 227px 170px 182px 113px;
+      grid-template-rows: 20px 26px 26px 26px 26px 26px 26px;
+      gap: 2px 0;
+      .dreamshare {
+        @include size-type($Montserrat-Regular, 16px, 20px, $color-red);
+      }
+      .company {
+        @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+      }
+      .partners {
+        @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+      }
+      .designed-by {
+        @include size-type($Montserrat-Bold, 10px, 12px, $color-cccccc);
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+      .areto-development {
+        @include option-nomain(110px, 24px);
+        background-image: url("../image/Bitmap.png");
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      .about {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      .contact {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+      }
+      .press {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+      }
+      .blog {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 5;
+      }
+      .terms-and-privacy {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 6;
+      }
+      .help {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 7;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .nav {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .nav-up {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 -100px 0;
+  }
+  .main-block-first {
+    @include option(100%, 888px, $color-white);
+    display: grid;
+    grid-template-columns: 236px 236px;
+    grid-template-rows: 66px 400px 400px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 89px auto 0;
+    .paragraph {
+      @include size-type($Montserrat-Bold, 22px, 27px, $color-black);
+      text-align: center;
+      margin: 5px 0 0 0;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+    &-img-right {
+      @include option-nomain(236px, 400px);
+      background-image: url("../image/Step 3 image.png");
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+  .main-block-third {
+    @include option-nomain(100%, 1710px);
+    display: grid;
+    margin: 34px auto 0;
+    align-items: center;
+    justify-content: center;
+    .paragraph {
+      @include size-type($Montserrat-Bold, 22px, 27px, $color-black);
+      text-align: center;
+    }
+    &-grid {
+      @include option-nomain(100%, 1630px);
+      display: grid;
+      grid-template-columns: 236px 236px;
+      grid-template-rows: 310px 310px 310px 310px 310px;
+      margin: 34px auto 0;
+      gap: 20px 20px;
+      align-items: center;
+      justify-content: center;
+      .grid-sport {
+        @include option-nomain(236px, 310px);
+        background-image: url("../image/Sport.png");
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        border-radius: 4px;
+      }
+      .grid-healath {
+        @include option-nomain(236px, 310px);
+        background-image: url("../image/Healath.png");
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        border-radius: 4px;
+      }
+      .grid-extreme {
+        @include option-nomain(236px, 310px);
+        background-image: url("../image/Extreme.png");
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        border-radius: 4px;
+      }
+      .grid-games {
+        @include option-nomain(236px, 310px);
+        background-image: url("../image/Games.png");
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        border-radius: 4px;
+      }
+      .grid-culture {
+        @include option-nomain(492px, 310px);
+        background-image: url("../image/Culture.png");
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        border-radius: 4px;
+      }
+      .grid-culturecopy {
+        @include option-nomain(492px, 310px);
+        background-image: url("../image/Culture Copy.png");
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        border-radius: 4px;
+      }
+      .grid-gamescopy {
+        @include option-nomain(236px, 310px);
+        background-image: url("../image/Games Copy.png");
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 5;
+        border-radius: 4px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .main-block-fourth {
+    @include option-nomain(477px, 257px);
+    margin: 93px auto 0;
+    .holiday-activity-input {
+      height: 137px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      margin: 23px auto 0;
+      &-search {
+        @include option(280px, 40px, $color-white);
+        border: 1px solid #d4d4d4;
+        border-radius: 3px;
+        font-family: "Roboto-Light";
+        color: $color-lightgrey;
+        padding: 0 0 0 12px;
+      }
+      .holiday-activity-button {
+        @include option(280px, 40px, $color-red);
+        border: none;
+        border-radius: 40px;
+        color: white;
+        font-family: $Montserrat-Bold;
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 260px;
+    margin: 100px auto 0;
+    &-block {
+      width: 100%;
+      height: 186px;
+      margin: 38px auto;
+      display: grid;
+      grid-template-columns: 156px 120px 111px 113px;
+      grid-template-rows: 20px 26px 26px 26px 26px 26px 26px;
+      gap: 2px 0;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .header {
+    @include option-nomain(100%, 540px);
+    background-image: url("../image/Background.png");
+    padding: 18px 0 0 0;
+    margin: 0 auto;
+    background-position: center;
+    .log {
+      font-size: 14px;
+      line-height: 17px;
+      &-in {
+        font-family: $Montserrat-Regular;
+        color: $color-white;
+        text-decoration: none;
+        align-self: center;
+        margin: 0 15px 0 0;
+      }
+      &-up {
+        @include option-nomain(90px, 36px);
+        color: $color-white;
+        border: 2px solid $color-white;
+        box-sizing: border-box;
+        border-radius: 40px;
+        cursor: pointer;
+        background-color: transparent;
+        font-family: $Montserrat-Regular;
+      }
+    }
+    .nav-up {
+      height: 160px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .logo {
+      @include size-type($Montserrat-Bold, 20px, 24px, $color-white);
+      padding: 7px 0 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .holiday-dream {
+      @include size-type($Montserrat-Bold, 30px, 37px, $color-white);
+      width: 272px;
+      height: 74px;
+      margin: 26px auto 0;
+      display: flex;
+      text-align: center;
+
+      &-button {
+        @include option(280px, 40px, $color-red);
+        border: none;
+        color: $color-f7f3f2;
+        font-family: $Montserrat-Bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        margin: 15px auto 0;
+        cursor: pointer;
+      }
+    }
+
+    .holiday-dream-lower {
+      @include size-type($Roboto-Light, 18px, 24px, $color-f7f3f2);
+      @include option-nomain(280px, 49px);
+      text-align: center;
+      margin: 5.5px auto 0;
+    }
+  }
+  .main-block-first {
+    @include option(100%, 782px, $color-white);
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 27px 240px 240px 240px;
+    gap: 14px;
+    .paragraph {
+      @include size-type($Montserrat-Bold, 22px, 27px, $color-black);
+      text-align: center;
+      margin: 5px 0 0 0;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+    &-img-left {
+      @include option-nomain(300px, 240px);
+      background-position: bottom;
+      background-image: url("../image/Step 1 image.png");
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      border-radius: 3px;
+    }
+    &-img-center {
+      @include option-nomain(300px, 240px);
+      background-position: bottom;
+      background-image: url("../image/Step 2 image.png");
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      border-radius: 3px;
+    }
+    &-img-right {
+      @include option-nomain(300px, 240px);
+      background-position: bottom;
+      background-image: url("../image/Step 3 image.png");
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 4;
+      grid-row-end: 4;
+      border-radius: 3px;
+    }
+  }
+  .main-block-second {
+    @include option(100%, 1031px, $color-white);
+    margin: 40px auto 0;
+    .paragraph {
+      @include size-type($Montserrat-Bold, 22px, 27px, $color-black);
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .meet-partner {
+      @include option-nomain(236px, 887px);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 236px;
+      grid-template-rows: 205px 224px 205px 205px;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      .meet-partner-bradley {
+        @include option-nomain(236px, 205px);
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin: 0 0 4px 0;
+        .partner-bradley {
+          @include option-nomain(120px, 120px);
+          margin: 0 auto;
+          background-image: url("../image/Avatar.png");
+        }
+        .partner-bradley-bold-text {
+          @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+          text-align: center;
+          margin: 21px 0 22px 0;
+        }
+        .partner-bradley-simply-text {
+          @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+          text-align: center;
+        }
+      }
+      .meet-partner-marie {
+        @include option-nomain(236px, 205px);
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        margin: 25px 0 0 0;
+        .partner-marie {
+          @include option-nomain(120px, 120px);
+          margin: 0 auto;
+          background-image: url("../image/Avatar2.png");
+        }
+        .partner-marie-bold-text {
+          @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+          text-align: center;
+          margin: 18px 0 22px 0;
+        }
+        .partner-marie-simply-text {
+          @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+          text-align: center;
+        }
+      }
+      .meet-partner-diana {
+        @include option-nomain(236px, 224px);
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin: 10px 0 0 0;
+        .partner-diana {
+          @include option-nomain(120px, 120px);
+          margin: 0 auto;
+          background-image: url("../image/Avatar3.png");
+        }
+        .partner-diana-bold-text {
+          @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+          text-align: center;
+          margin: 21px 0 28px 0;
+        }
+        .partner-diana-simply-text {
+          @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+          text-align: center;
+        }
+      }
+      .meet-partner-christopher {
+        @include option-nomain(236px, 205px);
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        margin: 43px 0 0 0;
+        .partner-christopher {
+          @include option-nomain(120px, 120px);
+          margin: 0 auto;
+          background-image: url("../image/Avatar4.png");
+        }
+        .partner-christopher-bold-text {
+          @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+          text-align: center;
+          margin: 18px 0 22px 0;
+        }
+        .partner-christopher-simply-text {
+          @include size-type($Roboto-Light, 14px, 14px, $color-grey);
+          text-align: center;
+        }
+      }
+    }
+    .button-see-partners {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 34px auto 0;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 4;
+      .see-partners {
+        @include option(280px, 38px, $color-white);
+        border: 2px solid $color-red;
+        border-radius: 40px;
+        color: $color-red;
+        font-family: $Montserrat-Bold;
+      }
+    }
+  }
+  .main-block-third {
+    @include option(300px, 988px, $color-white);
+    margin: 36px auto 0;
+    .paragraph {
+      @include size-type($Montserrat-Bold, 22px, 27px, $color-black);
+      @include option-nomain(280px, 54px);
+      text-align: center;
+      margin: 0 auto;
+    }
+    &-grid {
+      @include option-nomain(300px, 900px);
+      display: grid;
+      grid-template-columns: 300px;
+      grid-template-rows: 120px 120px 120px 120px 120px 120px 120px;
+      margin: 34px 0 0 0;
+      gap: 10px;
+      .grid-sport {
+        @include option-nomain(300px, 120px);
+        background-position: center;
+        background-image: url("../image/Sport.png");
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        border-radius: 4px;
+      }
+      .grid-healath {
+        @include option-nomain(300px, 120px);
+        background-position: center;
+        background-image: url("../image/Healath.png");
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        border-radius: 4px;
+      }
+      .grid-extreme {
+        @include option-nomain(300px, 120px);
+        background-position: center;
+        background-image: url("../image/Extreme.png");
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        border-radius: 4px;
+      }
+      .grid-games {
+        @include option-nomain(300px, 120px);
+        background-position: center;
+        background-image: url("../image/Games.png");
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        border-radius: 4px;
+      }
+      .grid-culture {
+        @include option-nomain(300px, 120px);
+        background-position: center;
+        background-image: url("../image/Culture.png");
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+        border-radius: 4px;
+      }
+      .grid-culturecopy {
+        @include option-nomain(300px, 120px);
+        background-position: center;
+        background-image: url("../image/Culture Copy.png");
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;
+        border-radius: 4px;
+      }
+      .grid-gamescopy {
+        @include option-nomain(300px, 120px);
+        background-position: center;
+        background-image: url("../image/Games Copy.png");
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 7;
+        grid-row-end: 7;
+        border-radius: 4px;
+      }
+    }
+  }
+  .main-block-fourth {
+    @include option-nomain(320px, 195px);
+    margin: 33px auto 0;
+    .paragraph {
+      @include size-type($Montserrat-Bold, 22px, 27px, $color-black);
+      @include option-nomain(280px, 54px);
+      text-align: center;
+      margin: 0 auto;
+    }
+    .holiday-activity {
+      @include size-type($Roboto-Light, 18px, 14px, $color-grey);
+      margin: 19px 0 0 0;
+      text-align: center;
+    }
+    .holiday-activity-input {
+      height: 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 16px auto 0;
+      .holiday-activity-button {
+        @include option(280px, 40px, $color-red);
+        border-radius: 40px;
+        border: none;
+        color: $color-white;
+        font-family: $Montserrat-Bold;
+      }
+      .holiday-activity-search {
+        @include option(280px, 40px, $color-white);
+        border: 1px solid #d4d4d4;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+        border-radius: 3px;
+        font-family: $Roboto-Light;
+        color: $color-lightgrey;
+        padding: 0 0 0 12px;
+      }
+    }
+  }
+  .footer {
+    @include option-nomain(100%, 260px);
+    margin: 37px auto 0;
+    hr {
+      @include option(100%, 2px, $color-red);
+      border: none;
+    }
+    &-block {
+      @include option-nomain(200px, 183px);
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: 44px 66px 35px 40px;
+      grid-template-rows: 31px ​20px 20px 29px 35px;
+      .dreamshare {
+        @include size-type($Montserrat-Regular, 16px, 20px, $color-red);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin: 0 auto;
+      }
+      .company {
+        @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin: 10px auto;
+      }
+      .partners {
+        @include size-type($Montserrat-Bold, 14px, 17px, $color-black);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 5;
+        margin: 0 auto;
+      }
+      .designed-by {
+        @include size-type($Montserrat-Bold, 10px, 12px, $color-cccccc);
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 6;
+      }
+      .areto-development {
+        @include option-nomain(110px, 24px);
+        background-image: url("../image/Bitmap.png");
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 7;
+        grid-row-end: 7;
+        margin: 0 auto;
+      }
+      .about {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+      }
+      .contact {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+      }
+      .press {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+      }
+      .blog {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        margin: 0 0 0 14px;
+      }
+      .terms-and-privacy {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        margin: 0 0 0 16px;
+      }
+      .help {
+        @include size-type($Roboto-Light, 14px, 26px, $color-lightgrey);
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 4;
+      }
+    }
+  }
+}

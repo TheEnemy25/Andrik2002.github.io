@@ -1,0 +1,2373 @@
+@charset "UTF-8";
+/* reset.css */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("./fonts/Roboto-Light.ttf");
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 1440px;
+  height: 700px;
+  background-image: url("../image/Background.png");
+  padding: 40px 0 0 0;
+  margin: 0 auto;
+  background-position: center;
+}
+
+.header .log {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.header .log-in {
+  font-family: "Montserrat-Regular";
+  color: white;
+  text-decoration: none;
+}
+
+.header .log-up {
+  width: 90px;
+  height: 36px;
+  color: white;
+  border: 2px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Montserrat-Regular";
+}
+
+.header .nav-up {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .logo {
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  padding: 7px 0 0 0;
+}
+
+.header .holiday-dream {
+  font-family: "Montserrat-Bold";
+  font-size: 52px;
+  line-height: 63px;
+  color: white;
+  width: 470px;
+  height: 126px;
+  margin: 150px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.header .holiday-dream-button {
+  width: 225px;
+  height: 40px;
+  background-color: #ff4e50;
+  border: none;
+  color: #f7f3f2;
+  font-family: "Montserrat-Bold";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+  margin: 33px auto 0;
+  cursor: pointer;
+}
+
+.header .holiday-dream-lower {
+  font-family: "Roboto-Light";
+  font-size: 24px;
+  line-height: 24px;
+  color: #f7f3f2;
+  text-align: center;
+  margin-top: 28px;
+}
+
+.main-block-first {
+  width: 940px;
+  height: 468px;
+  background-color: white;
+  margin: 89px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
+  -ms-grid-rows: 66px 400px;
+      grid-template-rows: 66px 400px;
+  gap: 0 20px;
+}
+
+.main-block-first .paragraph {
+  font-family: "Montserrat-Bold";
+  font-size: 26px;
+  line-height: 32px;
+  color: #444444;
+  text-align: center;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.main-block-first-img-left {
+  width: 300px;
+  height: 400px;
+  background-image: url("../image/Step 1 image.png");
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.main-block-first-img-center {
+  width: 300px;
+  height: 400px;
+  background-image: url("../image/Step 2 image.png");
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.main-block-first-img-right {
+  width: 300px;
+  height: 400px;
+  background-image: url("../image/Step 3 image.png");
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.main-block-second {
+  width: 941px;
+  height: 367px;
+  background-color: white;
+  margin: 88px auto 0;
+}
+
+.main-block-second .paragraph {
+  font-family: "Montserrat-Bold";
+  font-size: 26px;
+  line-height: 32px;
+  color: #444444;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.main-block-second .meet-partner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-block-second .meet-partner .meet-partner-bradley {
+  width: 221px;
+  height: 224px;
+}
+
+.main-block-second .meet-partner .meet-partner-bradley .partner-bradley {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background-image: url("../image/Avatar.png");
+}
+
+.main-block-second .meet-partner .meet-partner-bradley .partner-bradley-bold-text {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+  text-align: center;
+  margin: 17px 0 28px 0;
+}
+
+.main-block-second .meet-partner .meet-partner-bradley .partner-bradley-simply-text {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+  text-align: center;
+}
+
+.main-block-second .meet-partner .meet-partner-marie {
+  width: 221px;
+  height: 224px;
+}
+
+.main-block-second .meet-partner .meet-partner-marie .partner-marie {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background-image: url("../image/Avatar2.png");
+}
+
+.main-block-second .meet-partner .meet-partner-marie .partner-marie-bold-text {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+  text-align: center;
+  margin: 17px 0 28px 0;
+}
+
+.main-block-second .meet-partner .meet-partner-marie .partner-marie-simply-text {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+  text-align: center;
+}
+
+.main-block-second .meet-partner .meet-partner-diana {
+  width: 221px;
+  height: 224px;
+}
+
+.main-block-second .meet-partner .meet-partner-diana .partner-diana {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background-image: url("../image/Avatar3.png");
+}
+
+.main-block-second .meet-partner .meet-partner-diana .partner-diana-bold-text {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+  text-align: center;
+  margin: 17px 0 28px 0;
+}
+
+.main-block-second .meet-partner .meet-partner-diana .partner-diana-simply-text {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+  text-align: center;
+}
+
+.main-block-second .meet-partner .meet-partner-christopher {
+  width: 221px;
+  height: 224px;
+}
+
+.main-block-second .meet-partner .meet-partner-christopher .partner-christopher {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background-image: url("../image/Avatar4.png");
+}
+
+.main-block-second .meet-partner .meet-partner-christopher .partner-christopher-bold-text {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+  text-align: center;
+  margin: 17px 0 28px 0;
+}
+
+.main-block-second .meet-partner .meet-partner-christopher .partner-christopher-simply-text {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+  text-align: center;
+}
+
+.main-block-second .button-see-partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 36px auto 0;
+}
+
+.main-block-second .button-see-partners .see-partners {
+  width: 180px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid #ff4e50;
+  border-radius: 40px;
+  color: #ff4e50;
+  font-family: "Montserrat-Bold";
+}
+
+.main-block-third {
+  width: 940px;
+  height: 1035px;
+  background-color: white;
+  margin: 89px auto 0;
+}
+
+.main-block-third .paragraph {
+  font-family: "Montserrat-Bold";
+  font-size: 26px;
+  line-height: 32px;
+  color: #444444;
+  text-align: center;
+}
+
+.main-block-third-grid {
+  width: 940px;
+  height: 970px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 310px 310px 310px;
+      grid-template-columns: 310px 310px 310px;
+  -ms-grid-rows: 310px 310px 310px;
+      grid-template-rows: 310px 310px 310px;
+  margin: 34px 0 0 0;
+  gap: 20px 10px;
+}
+
+.main-block-third-grid .grid-sport {
+  background-image: url("../image/Sport.png");
+  width: 300px;
+  height: 310px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+  border-radius: 4px;
+}
+
+.main-block-third-grid .grid-healath {
+  background-image: url("../image/Healath.png");
+  width: 300px;
+  height: 310px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+  border-radius: 4px;
+}
+
+.main-block-third-grid .grid-extreme {
+  background-image: url("../image/Extreme.png");
+  width: 300px;
+  height: 310px;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+  border-radius: 4px;
+}
+
+.main-block-third-grid .grid-games {
+  background-image: url("../image/Games.png");
+  width: 300px;
+  height: 310px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 2;
+  border-radius: 4px;
+}
+
+.main-block-third-grid .grid-culture {
+  background-image: url("../image/Culture.png");
+  width: 620px;
+  height: 310px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  border-radius: 4px;
+}
+
+.main-block-third-grid .grid-culturecopy {
+  background-image: url("../image/Culture Copy.png");
+  width: 620px;
+  height: 310px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 3;
+  border-radius: 4px;
+}
+
+.main-block-third-grid .grid-gamescopy {
+  background-image: url("../image/Games Copy.png");
+  width: 300px;
+  height: 310px;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 3;
+  border-radius: 4px;
+}
+
+.main-block-fourth {
+  width: 482px;
+  height: 165px;
+  margin: 90px auto 0;
+}
+
+.main-block-fourth .paragraph {
+  font-family: "Montserrat-Bold";
+  font-size: 26px;
+  line-height: 32px;
+  color: #444444;
+  text-align: center;
+}
+
+.main-block-fourth .holiday-activity {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  line-height: 14px;
+  color: #666666;
+  margin: 55px 0 0 0;
+  text-align: center;
+}
+
+.main-block-fourth .holiday-activity-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 23px 0 0 0;
+}
+
+.main-block-fourth .holiday-activity-input .holiday-activity-button {
+  width: 172.12px;
+  height: 40px;
+  background-color: #ff4e50;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  font-family: "Montserrat-Bold";
+}
+
+.main-block-fourth .holiday-activity-input .holiday-activity-search {
+  width: 299px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+  border-radius: 3px;
+  font-family: "Roboto-Light";
+  color: #999999;
+  padding: 0 0 0 12px;
+}
+
+.footer {
+  width: 100%;
+  height: 260px;
+  margin: 100px auto 0;
+}
+
+.footer hr {
+  width: 1440px;
+  height: 2px;
+  background-color: #ff4e50;
+  border: none;
+}
+
+.footer-block {
+  width: 944px;
+  height: 186px;
+  margin: 38px auto 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 241px 239px 351px 113px;
+      grid-template-columns: 241px 239px 351px 113px;
+  -ms-grid-rows: 20px 26px 26px 26px 26px 26px 26px;
+      grid-template-rows: 20px 26px 26px 26px 26px 26px 26px;
+  gap: 2px 0;
+}
+
+.footer-block .dreamshare {
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+  line-height: 20px;
+  color: #ff4e50;
+}
+
+.footer-block .company {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+}
+
+.footer-block .partners {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+}
+
+.footer-block .designed-by {
+  font-family: "Montserrat-Bold";
+  font-size: 10px;
+  line-height: 12px;
+  color: #cccccc;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-block .areto-development {
+  width: 110px;
+  height: 24px;
+  background-image: url("../image/Bitmap.png");
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 4;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.footer-block .about {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 26px;
+  color: #999999;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.footer-block .contact {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 26px;
+  color: #999999;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.footer-block .press {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 26px;
+  color: #999999;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+.footer-block .blog {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 26px;
+  color: #999999;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 5;
+}
+
+.footer-block .terms-and-privacy {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 26px;
+  color: #999999;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 6;
+}
+
+.footer-block .help {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 26px;
+  color: #999999;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  grid-row-end: 7;
+}
+
+@media screen and (max-width: 1399px) {
+  .header {
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-image: url("../image/Background.png");
+    padding: 40px 0 0 0;
+    margin: 0 auto;
+  }
+  .nav {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 977px) {
+  .header {
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-image: url("../image/Background.png");
+    padding: 40px 0 0 0;
+    margin: 0 auto;
+  }
+  .nav {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .nav-up {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 -140px 0;
+  }
+  .main-block-first {
+    width: 748px;
+    height: 468px;
+    background-color: white;
+    margin: 89px auto 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 236px 236px 236px;
+        grid-template-columns: 236px 236px 236px;
+    -ms-grid-rows: 66px 400px;
+        grid-template-rows: 66px 400px;
+    gap: 0 20px;
+  }
+  .main-block-first .paragraph {
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    text-align: center;
+    margin: 5px 0 0 0;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .main-block-first-img-left {
+    width: 236px;
+    height: 400px;
+    background-image: url("../image/Step 1 image.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .main-block-first-img-center {
+    width: 236px;
+    height: 400px;
+    background-image: url("../image/Step 2 image.png");
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .main-block-first-img-right {
+    width: 236px;
+    height: 400px;
+    background-image: url("../image/Step 3 image.png");
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 3;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .main-block-second {
+    width: 492px;
+    height: 605px;
+    background-color: white;
+    margin: 91px auto 0;
+  }
+  .main-block-second .paragraph {
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .main-block-second .meet-partner {
+    width: 492px;
+    height: 469px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 236px 236px;
+        grid-template-columns: 236px 236px;
+    -ms-grid-rows: 224px 205px;
+        grid-template-rows: 224px 205px;
+    gap: 37px 10px;
+  }
+  .main-block-second .meet-partner .meet-partner-bradley {
+    width: 236px;
+    height: 205px;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .main-block-second .meet-partner .meet-partner-bradley .partner-bradley {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-image: url("../image/Avatar.png");
+  }
+  .main-block-second .meet-partner .meet-partner-bradley .partner-bradley-bold-text {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    text-align: center;
+    margin: 21px 0 22px 0;
+  }
+  .main-block-second .meet-partner .meet-partner-bradley .partner-bradley-simply-text {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 14px;
+    color: #666666;
+    text-align: center;
+  }
+  .main-block-second .meet-partner .meet-partner-marie {
+    width: 236px;
+    height: 205px;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .main-block-second .meet-partner .meet-partner-marie .partner-marie {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-image: url("../image/Avatar2.png");
+  }
+  .main-block-second .meet-partner .meet-partner-marie .partner-marie-bold-text {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    text-align: center;
+    margin: 18px 0 22px 0;
+  }
+  .main-block-second .meet-partner .meet-partner-marie .partner-marie-simply-text {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 14px;
+    color: #666666;
+    text-align: center;
+  }
+  .main-block-second .meet-partner .meet-partner-diana {
+    width: 236px;
+    height: 224px;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .main-block-second .meet-partner .meet-partner-diana .partner-diana {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-image: url("../image/Avatar3.png");
+  }
+  .main-block-second .meet-partner .meet-partner-diana .partner-diana-bold-text {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    text-align: center;
+    margin: 21px 0 28px 0;
+  }
+  .main-block-second .meet-partner .meet-partner-diana .partner-diana-simply-text {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 14px;
+    color: #666666;
+    text-align: center;
+  }
+  .main-block-second .meet-partner .meet-partner-christopher {
+    width: 236px;
+    height: 205px;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .main-block-second .meet-partner .meet-partner-christopher .partner-christopher {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-image: url("../image/Avatar4.png");
+  }
+  .main-block-second .meet-partner .meet-partner-christopher .partner-christopher-bold-text {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    text-align: center;
+    margin: 18px 0 22px 0;
+  }
+  .main-block-second .meet-partner .meet-partner-christopher .partner-christopher-simply-text {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 14px;
+    color: #666666;
+    text-align: center;
+  }
+  .main-block-second .button-see-partners {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 36px auto 0;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  .main-block-second .button-see-partners .see-partners {
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #ff4e50;
+    border-radius: 40px;
+    color: #ff4e50;
+    font-family: "Montserrat-Bold";
+  }
+  .main-block-third {
+    width: 748px;
+    height: 1031px;
+    margin: 98px auto 0;
+  }
+  .main-block-third .paragraph {
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    text-align: center;
+  }
+  .main-block-third-grid {
+    width: 748px;
+    height: 970px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 236px 236px 236px;
+        grid-template-columns: 236px 236px 236px;
+    -ms-grid-rows: 310px 310px 310px;
+        grid-template-rows: 310px 310px 310px;
+    margin: 34px auto 0;
+    gap: 20px;
+  }
+  .main-block-third-grid .grid-sport {
+    width: 236px;
+    height: 310px;
+    background-position: center;
+    background-image: url("../image/Sport.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-healath {
+    width: 236px;
+    height: 310px;
+    background-position: center;
+    background-image: url("../image/Healath.png");
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-extreme {
+    width: 236px;
+    height: 310px;
+    background-position: center;
+    background-image: url("../image/Extreme.png");
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-games {
+    width: 236px;
+    height: 310px;
+    background-position: center;
+    background-image: url("../image/Games.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-culture {
+    width: 492px;
+    height: 310px;
+    background-position: center;
+    background-image: url("../image/Culture.png");
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-culturecopy {
+    width: 492px;
+    height: 310px;
+    background-position: center;
+    background-image: url("../image/Culture Copy.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-gamescopy {
+    width: 236px;
+    height: 310px;
+    background-image: url("../image/Games Copy.png");
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+    border-radius: 4px;
+  }
+  .main-block-fourth {
+    width: 482px;
+    height: 159px;
+    margin: 93px auto 0;
+  }
+  .main-block-fourth .paragraph {
+    color: #444444;
+    font-family: "Montserrat-Bold";
+    text-align: center;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .main-block-fourth .holiday-activity {
+    font-family: "Roboto-Light";
+    font-size: 18px;
+    line-height: 14px;
+    color: #666666;
+    margin: 55px 0 0 0;
+    text-align: center;
+  }
+  .main-block-fourth .holiday-activity-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 23px 0 0 0;
+  }
+  .main-block-fourth .holiday-activity-input .holiday-activity-button {
+    width: 172.12px;
+    height: 40px;
+    background-color: #ff4e50;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    font-family: "Montserrat-Bold";
+  }
+  .main-block-fourth .holiday-activity-input .holiday-activity-search {
+    width: 299px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #d4d4d4;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+    font-family: "Roboto-Light";
+    color: #999999;
+    padding: 0 0 0 12px;
+  }
+  .footer {
+    width: 100%;
+    height: 260px;
+    margin: 100px auto 0;
+  }
+  .footer hr {
+    width: 1440px;
+    height: 2px;
+    background-color: #ff4e50;
+    border: none;
+  }
+  .footer-block {
+    width: 692px;
+    height: 186px;
+    margin: 38px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 227px 170px 182px 113px;
+        grid-template-columns: 227px 170px 182px 113px;
+    -ms-grid-rows: 20px 26px 26px 26px 26px 26px 26px;
+        grid-template-rows: 20px 26px 26px 26px 26px 26px 26px;
+    gap: 2px 0;
+  }
+  .footer-block .dreamshare {
+    font-family: "Montserrat-Regular";
+    font-size: 16px;
+    line-height: 20px;
+    color: #ff4e50;
+  }
+  .footer-block .company {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+  }
+  .footer-block .partners {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+  }
+  .footer-block .designed-by {
+    font-family: "Montserrat-Bold";
+    font-size: 10px;
+    line-height: 12px;
+    color: #cccccc;
+    letter-spacing: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer-block .areto-development {
+    width: 110px;
+    height: 24px;
+    background-image: url("../image/Bitmap.png");
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 4;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .footer-block .about {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .footer-block .contact {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  .footer-block .press {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  .footer-block .blog {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 5;
+  }
+  .footer-block .terms-and-privacy {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 6;
+  }
+  .footer-block .help {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    grid-row-end: 7;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .nav {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .nav-up {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 -100px 0;
+  }
+  .main-block-first {
+    width: 100%;
+    height: 888px;
+    background-color: white;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 236px 236px;
+        grid-template-columns: 236px 236px;
+    -ms-grid-rows: 66px 400px 400px;
+        grid-template-rows: 66px 400px 400px;
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 89px auto 0;
+  }
+  .main-block-first .paragraph {
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    text-align: center;
+    margin: 5px 0 0 0;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .main-block-first-img-right {
+    width: 236px;
+    height: 400px;
+    background-image: url("../image/Step 3 image.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .main-block-third {
+    width: 100%;
+    height: 1710px;
+    display: -ms-grid;
+    display: grid;
+    margin: 34px auto 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-block-third .paragraph {
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    text-align: center;
+  }
+  .main-block-third-grid {
+    width: 100%;
+    height: 1630px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 236px 236px;
+        grid-template-columns: 236px 236px;
+    -ms-grid-rows: 310px 310px 310px 310px 310px;
+        grid-template-rows: 310px 310px 310px 310px 310px;
+    margin: 34px auto 0;
+    gap: 20px 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-block-third-grid .grid-sport {
+    width: 236px;
+    height: 310px;
+    background-image: url("../image/Sport.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-healath {
+    width: 236px;
+    height: 310px;
+    background-image: url("../image/Healath.png");
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-extreme {
+    width: 236px;
+    height: 310px;
+    background-image: url("../image/Extreme.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-games {
+    width: 236px;
+    height: 310px;
+    background-image: url("../image/Games.png");
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-culture {
+    width: 492px;
+    height: 310px;
+    background-image: url("../image/Culture.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-culturecopy {
+    width: 492px;
+    height: 310px;
+    background-image: url("../image/Culture Copy.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-gamescopy {
+    width: 236px;
+    height: 310px;
+    background-image: url("../image/Games Copy.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 5;
+    border-radius: 4px;
+    margin: 0 auto;
+  }
+  .main-block-fourth {
+    width: 477px;
+    height: 257px;
+    margin: 93px auto 0;
+  }
+  .main-block-fourth .holiday-activity-input {
+    height: 137px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 23px auto 0;
+  }
+  .main-block-fourth .holiday-activity-input-search {
+    width: 280px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    font-family: "Roboto-Light";
+    color: #999999;
+    padding: 0 0 0 12px;
+  }
+  .main-block-fourth .holiday-activity-input .holiday-activity-button {
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-family: "Montserrat-Bold";
+  }
+  .footer {
+    width: 100%;
+    height: 260px;
+    margin: 100px auto 0;
+  }
+  .footer-block {
+    width: 100%;
+    height: 186px;
+    margin: 38px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 156px 120px 111px 113px;
+        grid-template-columns: 156px 120px 111px 113px;
+    -ms-grid-rows: 20px 26px 26px 26px 26px 26px 26px;
+        grid-template-rows: 20px 26px 26px 26px 26px 26px 26px;
+    gap: 2px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .header {
+    width: 100%;
+    height: 540px;
+    background-image: url("../image/Background.png");
+    padding: 18px 0 0 0;
+    margin: 0 auto;
+    background-position: center;
+  }
+  .header .log {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .header .log-in {
+    font-family: "Montserrat-Regular";
+    color: white;
+    text-decoration: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 15px 0 0;
+  }
+  .header .log-up {
+    width: 90px;
+    height: 36px;
+    color: white;
+    border: 2px solid white;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "Montserrat-Regular";
+  }
+  .header .nav-up {
+    height: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .header .logo {
+    font-family: "Montserrat-Bold";
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    padding: 7px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .header .holiday-dream {
+    font-family: "Montserrat-Bold";
+    font-size: 30px;
+    line-height: 37px;
+    color: white;
+    width: 272px;
+    height: 74px;
+    margin: 26px auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .header .holiday-dream-button {
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    border: none;
+    color: #f7f3f2;
+    font-family: "Montserrat-Bold";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 40px;
+    margin: 15px auto 0;
+    cursor: pointer;
+  }
+  .header .holiday-dream-lower {
+    font-family: "Roboto-Light";
+    font-size: 18px;
+    line-height: 24px;
+    color: #f7f3f2;
+    width: 280px;
+    height: 49px;
+    text-align: center;
+    margin: 5.5px auto 0;
+  }
+  .main-block-first {
+    width: 100%;
+    height: 782px;
+    background-color: white;
+    margin: 30px auto 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
+    -ms-grid-rows: 27px 240px 240px 240px;
+        grid-template-rows: 27px 240px 240px 240px;
+    gap: 14px;
+  }
+  .main-block-first .paragraph {
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    text-align: center;
+    margin: 5px 0 0 0;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .main-block-first-img-left {
+    width: 300px;
+    height: 240px;
+    background-position: bottom;
+    background-image: url("../image/Step 1 image.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+    border-radius: 3px;
+  }
+  .main-block-first-img-center {
+    width: 300px;
+    height: 240px;
+    background-position: bottom;
+    background-image: url("../image/Step 2 image.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+    border-radius: 3px;
+  }
+  .main-block-first-img-right {
+    width: 300px;
+    height: 240px;
+    background-position: bottom;
+    background-image: url("../image/Step 3 image.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+    border-radius: 3px;
+  }
+  .main-block-second {
+    width: 100%;
+    height: 1031px;
+    background-color: white;
+    margin: 40px auto 0;
+  }
+  .main-block-second .paragraph {
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .main-block-second .meet-partner {
+    width: 236px;
+    height: 887px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 236px;
+        grid-template-columns: 236px;
+    -ms-grid-rows: 205px 224px 205px 205px;
+        grid-template-rows: 205px 224px 205px 205px;
+    gap: 8px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-block-second .meet-partner .meet-partner-bradley {
+    width: 236px;
+    height: 205px;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    margin: 0 0 4px 0;
+  }
+  .main-block-second .meet-partner .meet-partner-bradley .partner-bradley {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-image: url("../image/Avatar.png");
+  }
+  .main-block-second .meet-partner .meet-partner-bradley .partner-bradley-bold-text {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    text-align: center;
+    margin: 21px 0 22px 0;
+  }
+  .main-block-second .meet-partner .meet-partner-bradley .partner-bradley-simply-text {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 14px;
+    color: #666666;
+    text-align: center;
+  }
+  .main-block-second .meet-partner .meet-partner-marie {
+    width: 236px;
+    height: 205px;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+    margin: 25px 0 0 0;
+  }
+  .main-block-second .meet-partner .meet-partner-marie .partner-marie {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-image: url("../image/Avatar2.png");
+  }
+  .main-block-second .meet-partner .meet-partner-marie .partner-marie-bold-text {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    text-align: center;
+    margin: 18px 0 22px 0;
+  }
+  .main-block-second .meet-partner .meet-partner-marie .partner-marie-simply-text {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 14px;
+    color: #666666;
+    text-align: center;
+  }
+  .main-block-second .meet-partner .meet-partner-diana {
+    width: 236px;
+    height: 224px;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+    margin: 10px 0 0 0;
+  }
+  .main-block-second .meet-partner .meet-partner-diana .partner-diana {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-image: url("../image/Avatar3.png");
+  }
+  .main-block-second .meet-partner .meet-partner-diana .partner-diana-bold-text {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    text-align: center;
+    margin: 21px 0 28px 0;
+  }
+  .main-block-second .meet-partner .meet-partner-diana .partner-diana-simply-text {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 14px;
+    color: #666666;
+    text-align: center;
+  }
+  .main-block-second .meet-partner .meet-partner-christopher {
+    width: 236px;
+    height: 205px;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+    margin: 43px 0 0 0;
+  }
+  .main-block-second .meet-partner .meet-partner-christopher .partner-christopher {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-image: url("../image/Avatar4.png");
+  }
+  .main-block-second .meet-partner .meet-partner-christopher .partner-christopher-bold-text {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    text-align: center;
+    margin: 18px 0 22px 0;
+  }
+  .main-block-second .meet-partner .meet-partner-christopher .partner-christopher-simply-text {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 14px;
+    color: #666666;
+    text-align: center;
+  }
+  .main-block-second .button-see-partners {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 34px auto 0;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  .main-block-second .button-see-partners .see-partners {
+    width: 280px;
+    height: 38px;
+    background-color: white;
+    border: 2px solid #ff4e50;
+    border-radius: 40px;
+    color: #ff4e50;
+    font-family: "Montserrat-Bold";
+  }
+  .main-block-third {
+    width: 300px;
+    height: 988px;
+    background-color: white;
+    margin: 36px auto 0;
+  }
+  .main-block-third .paragraph {
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    width: 280px;
+    height: 54px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main-block-third-grid {
+    width: 300px;
+    height: 900px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
+    -ms-grid-rows: 120px 120px 120px 120px 120px 120px 120px;
+        grid-template-rows: 120px 120px 120px 120px 120px 120px 120px;
+    margin: 34px 0 0 0;
+    gap: 10px;
+  }
+  .main-block-third-grid .grid-sport {
+    width: 300px;
+    height: 120px;
+    background-position: center;
+    background-image: url("../image/Sport.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-healath {
+    width: 300px;
+    height: 120px;
+    background-position: center;
+    background-image: url("../image/Healath.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-extreme {
+    width: 300px;
+    height: 120px;
+    background-position: center;
+    background-image: url("../image/Extreme.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-games {
+    width: 300px;
+    height: 120px;
+    background-position: center;
+    background-image: url("../image/Games.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-culture {
+    width: 300px;
+    height: 120px;
+    background-position: center;
+    background-image: url("../image/Culture.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 5;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-culturecopy {
+    width: 300px;
+    height: 120px;
+    background-position: center;
+    background-image: url("../image/Culture Copy.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 6;
+    border-radius: 4px;
+  }
+  .main-block-third-grid .grid-gamescopy {
+    width: 300px;
+    height: 120px;
+    background-position: center;
+    background-image: url("../image/Games Copy.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    grid-row-end: 7;
+    border-radius: 4px;
+  }
+  .main-block-fourth {
+    width: 320px;
+    height: 195px;
+    margin: 33px auto 0;
+  }
+  .main-block-fourth .paragraph {
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    width: 280px;
+    height: 54px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main-block-fourth .holiday-activity {
+    font-family: "Roboto-Light";
+    font-size: 18px;
+    line-height: 14px;
+    color: #666666;
+    margin: 19px 0 0 0;
+    text-align: center;
+  }
+  .main-block-fourth .holiday-activity-input {
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 16px auto 0;
+  }
+  .main-block-fourth .holiday-activity-input .holiday-activity-button {
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    font-family: "Montserrat-Bold";
+  }
+  .main-block-fourth .holiday-activity-input .holiday-activity-search {
+    width: 280px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #d4d4d4;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+    font-family: "Roboto-Light";
+    color: #999999;
+    padding: 0 0 0 12px;
+  }
+  .footer {
+    width: 100%;
+    height: 260px;
+    margin: 37px auto 0;
+  }
+  .footer hr {
+    width: 100%;
+    height: 2px;
+    background-color: #ff4e50;
+    border: none;
+  }
+  .footer-block {
+    width: 200px;
+    height: 183px;
+    margin: 20px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 44px 66px 35px 40px;
+        grid-template-columns: 44px 66px 35px 40px;
+    -ms-grid-rows: 31px ​20px 20px 29px 35px;
+        grid-template-rows: 31px ​20px 20px 29px 35px;
+  }
+  .footer-block .dreamshare {
+    font-family: "Montserrat-Regular";
+    font-size: 16px;
+    line-height: 20px;
+    color: #ff4e50;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    margin: 0 auto;
+  }
+  .footer-block .company {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+    margin: 10px auto;
+  }
+  .footer-block .partners {
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 5;
+    margin: 0 auto;
+  }
+  .footer-block .designed-by {
+    font-family: "Montserrat-Bold";
+    font-size: 10px;
+    line-height: 12px;
+    color: #cccccc;
+    letter-spacing: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 6;
+  }
+  .footer-block .areto-development {
+    width: 110px;
+    height: 24px;
+    background-image: url("../image/Bitmap.png");
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    grid-row-end: 7;
+    margin: 0 auto;
+  }
+  .footer-block .about {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  .footer-block .contact {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  .footer-block .press {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  .footer-block .blog {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 4;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+    margin: 0 0 0 14px;
+  }
+  .footer-block .terms-and-privacy {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+    margin: 0 0 0 16px;
+  }
+  .footer-block .help {
+    font-family: "Roboto-Light";
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 5;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+}
+/*# sourceMappingURL=main.css.map */
